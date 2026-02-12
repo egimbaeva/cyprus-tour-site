@@ -24,133 +24,124 @@
       <div class="logo">NEORA</div>
 
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#included">Included</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#about" id="navAbout">About</a></li>
+        <li><a href="#included" id="navIncluded">Included</a></li>
+        <li><a href="#contacts" id="navContacts">Contacts</a></li>
       </ul>
 
-      <button class="btn">Book</button>
+     <div class="lang-switch">
+  <button id="ruBtn" class="lang-btn active">RU</button>
+  <span>|</span>
+  <button id="enBtn" class="lang-btn">EN</button>
+</div>
     </nav>
+    <p class="nav-subtitle" id="heroText">Feel the Mediterranean vibe</p>
 
     <!-- HERO -->
     <div class="hero">
-      <h1>CYPRUS</h1>
-      <p>Feel the Mediterranean vibe</p>
 
       <div class="cards">
 
+  <div class="cards">
+
   <div class="card">
-    <img src="assets/images/city1.jpg" alt="city">
-    <p>3 cities <br> in Cyprus</p>
+    <img src="assets/images/cities.jpg" alt="cities">
+    <p id="cardCities">5 Cities Tour</p>
   </div>
 
   <div class="card">
-    <img src="assets/images/city2.jpg" alt="trip">
-    <p>10 days <br> trip</p>
+    <img src="assets/images/casino.jpg" alt="casino">
+    <p id="cardCasino">Legal Casino Night</p>
   </div>
 
   <div class="card">
-    <img src="assets/images/city3.jpg" alt="beach">
-    <p>best beaches <br> & food</p>
+    <img src="assets/images/beach.jpg" alt="beach">
+    <p id="cardBeach">Best Beaches</p>
   </div>
 
   <div class="card">
-    <img src="assets/images/city4.jpg" alt="vibe">
-    <p>enjoy <br> the vibe</p>
+    <img src="assets/images/photos.jpg" alt="photos">
+    <p id="cardPhotos">Instagram Moments</p>
   </div>
+</div>
 
 </div>
 
-      <button class="hero-btn">Book</button>
+      <button class="hero-btn" onclick="location.href='#contacts'">Book</button>
     </div>
-
-    <div class="social-icons">
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-</div>
 
   </header>
 
 
   <!-- ABOUT SECTION -->
   <section class="about" id="about">
-    <h2 class="section-title">
+    <div class="title-line">
   <span></span>
-  ABOUT THE TOUR
+  <h2 class="section-title" id="aboutTitle">ABOUT THE TOUR</h2>
   <span></span>
-</h2>
+</div>
     <div class="about-content">
       <div class="about-text">
-        <p>
-          We’ve planned a simple and convenient 10-day itinerary for your trip to Cyprus.
-          You will visit the best cities and beaches.
-        </p>
+      <p id="aboutText1">
+        We’ve planned a simple and convenient 7-day itinerary for your trip to Cyprus.
+        You will visit the best cities and beaches.
+      </p>
 
-        <p>
-          No need to worry about routes or schedules — everything is already organized.
-          You just relax and enjoy the journey.
-        </p>
-      </div>
+      <p id="aboutText2">
+        No need to worry about routes or schedules — everything is already organized.
+        You just relax and enjoy the journey.
+      </p>
+    </div>
 
       <div class="timeline">
 
   <div class="timeline-item left">
-    <div class="timeline-img">
-      <img src="assets/images/kyrenia.jpg" alt="Kyrenia">
+    <img src="assets/images/kyrenia.jpg" alt="Kyrenia">
+    <div class="timeline-text">
+      <span id="kyreniaDays">3 Days</span>
+      <h3 id="kyreniaTitle">Girne</h3>
+      <p id="kyreniaSub">(Kyrenia)</p>
     </div>
-
-    <div class="timeline-content">
-      <p class="days">Days 1–2</p>
-      <h4>Kyrenia</h4>
-      <p class="sub">(Girne)</p>
-    </div>
-
     <span class="dot"></span>
   </div>
-
 
   <div class="timeline-item right">
-    <div class="timeline-img">
-      <img src="assets/images/famagusta.jpg" alt="Famagusta">
+    <img src="assets/images/famagusta.jpg" alt="Famagusta">
+    <div class="timeline-text">
+      <span id="famagustaDays">1 Day</span>
+      <h3 id="famagustaTitle">Famagusta</h3>
+      <p id="famagustaSub">(Gazimagusa)</p>
     </div>
-
-    <div class="timeline-content">
-      <p class="days">Days 3–4</p>
-      <h4>Famagusta</h4>
-      <p class="sub">(Gazimagusa)</p>
-    </div>
-
     <span class="dot"></span>
   </div>
-
 
   <div class="timeline-item left">
-    <div class="timeline-img">
-      <img src="assets/images/nicosia.jpg" alt="Nicosia">
+    <img src="assets/images/nicosia.jpg" alt="Nicosia">
+    <div class="timeline-text">
+      <span id="nicosiaDays">1 Day</span>
+      <h3 id="nicosiaTitle">Lefkoşa</h3>
+      <p id="nicosiaSub">(Nicosia)</p>
     </div>
-
-    <div class="timeline-content">
-      <p class="days">Days 5–7</p>
-      <h4>Nicosia</h4>
-      <p class="sub">(Lefkosa)</p>
-    </div>
-
     <span class="dot"></span>
   </div>
 
-
   <div class="timeline-item right">
-    <div class="timeline-img">
-      <img src="assets/images/iskele.jpg" alt="Iskele">
+    <img src="assets/images/iskele.jpg" alt="Iskele">
+    <div class="timeline-text">
+      <span id="iskeleDays">1 Day</span>
+      <h3 id="iskeleTitle">Iskele</h3>
+      <p id="iskeleSub">(Trikomo)</p>
     </div>
+    <span class="dot"></span>
+  </div>
 
-    <div class="timeline-content">
-      <p class="days">Days 8–10</p>
-      <h4>Iskele</h4>
-      <p class="sub">(Trikomo)</p>
+  <div class="timeline-item left">
+    <img src="assets/images/karpaz.jpg" alt="Karpaz">
+    <div class="timeline-text">
+      <span id="karpazDays">1 day</span>
+      <h3 id="karpazTitle">Karpaz</h3>
+      <p id="karpazSub">(Golden Beach)</p>
     </div>
-
     <span class="dot"></span>
   </div>
 
@@ -164,49 +155,54 @@
 
   <!-- INCLUDED SECTION -->
   <section class="included" id="included">
-    <h2 class="section-title">
+  <div class="title-line">
   <span></span>
-  WHAT'S INCLUDED
+  <h2 class="section-title" id="includedTitle">WHAT'S INCLUDED</h2>
   <span></span>
-</h2>
+</div>
+
+  <div class="included-cards">
+
     <div class="included-card">
-  <i class="fa-solid fa-map-location-dot"></i>
-  <h3>Guides</h3>
-  <p>Professional local guides who know everything about Cyprus.</p>
-</div>
-
-<div class="included-card">
-  <i class="fa-solid fa-plane"></i>
-  <h3>Flights</h3>
-  <p>Round trip flights included in the package.</p>
-</div>
-
-<div class="included-card">
-  <i class="fa-solid fa-car"></i>
-  <h3>Transfers</h3>
-  <p>Airport transfers and city transportation.</p>
-</div>
-
-<div class="included-card">
-  <i class="fa-solid fa-hotel"></i>
-  <h3>Hotels</h3>
-  <p>Comfortable hotels with breakfast included.</p>
-</div>
+      <h3 id="incGuides">Guides</h3>
+      <p id="incGuidesText">Professional local guides who know everything about Cyprus.</p>
     </div>
-  </section>
+
+    <div class="included-card">
+  <h3 id="incCasino">Casino Night</h3>
+  <p id="incCasinoText">Legal casino experience and nightlife in North Cyprus.(Optional)</p>
+</div>
+
+    <div class="included-card">
+  <h3 id="incTransfers">Transfers</h3>
+  <p id="incTransfersText">Airport transfers and city transportation included.</p>
+</div>
+
+    <div class="included-card">
+      <h3 id="incHotels">Hotels</h3>
+      <p id="incHotelsText">Comfortable hotels with breakfast included.</p>
+    </div>
+   
+    <div class="included-card">
+  <h3 id="incSupport">24/7 Support</h3>
+  <p id="incSupportText">We stay in touch during the whole tour and help anytime.</p>
+</div>
+
+  </div>
+</section>
 
 
   <!-- CONTACT SECTION -->
   <section class="contact" id="contacts">
     <div class="contact-box">
-      <h3>Want to join us, but still have questions?</h3>
-      <p>Leave a request</p>
+     <h3 id="contactTitle">Want to join us, but still have questions?</h3>
+     <p id="contactSubtitle">Leave a request</p>
 
       <form>
-        <input type="text" placeholder="Your name" required />
-        <input type="text" placeholder="Phone number" required />
-        <textarea placeholder="Comment"></textarea>
-        <button type="submit">Send</button>
+        <input id="nameInput" type="text" placeholder="Your name" required />
+        <input id="phoneInput" type="text" placeholder="Phone number" required />
+        <textarea id="commentInput" placeholder="Comment"></textarea>
+        <button id="sendBtn" type="submit">Send</button>
       </form>
     </div>
   </section>
